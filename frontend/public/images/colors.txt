@@ -1,0 +1,11 @@
+lightSkyBlue: #68AFFD, rgb(104, 175, 253, .7)
+mediumSkyBlue: #548ECC
+darkSkyBlue: #38608A
+paleSand: #FFEBD3
+mediumOliveGreen: #8F7A5D
+darkOliveGreen: #573E1F
+lightOliveGreen: #BD8644
+marigoldYellow: #F3BF6C
+darkRedBrown: #571A18
+mediumRedBrown: #A64949
+lightRedBrown: #CC5A5A
