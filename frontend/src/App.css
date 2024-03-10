@@ -1,0 +1,410 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+  /* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700;800&family=Mukta:wght@400;600;700&display=swap');
+
+
+  /*   ----- Variables  -----  */
+  :root {
+      --paleSand: rgb(255, 235, 211, .8);
+      --darkOliveGreen: #695943;
+      --darkestOliveGreen: #3e3628;
+      --marigoldYellow: rgb(243, 191, 108, .9);
+      --mediumMarigoldYellow: #c89e5a;
+      --darkRedBrown: #571A18;
+      --mediumRedBrown: #A64949;
+    }
+    
+    /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+    body {       /* Can alternatively define in html {}. */
+      background-color:;
+      background-image: url("images/gimje-geomsansa-temple-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: var(--darkOliveGreen);
+      font-family: 'Mukta', sans-serif; 
+      font-weight: 400;
+      margin:0 auto;
+      padding: 1%;
+      max-width: 1200px;
+    }
+    
+    /*  ----- Page layout blocks -----  */
+    header {
+      background-color: var(--marigoldYellow);
+      padding: .5%;
+      margin: .5%;
+      border-style: groove;
+      border-width: 8px;
+      border-color: var(--darkOliveGreen);
+      text-align: center;
+      font-size: 22px;  
+    }
+  
+    header img {
+      width: 35px;
+      height: 35px;
+      padding: .5%;
+      margin: .5%
+    }
+  
+    main {
+      background-color: var(--paleSand);
+      color: var(--darkRedBrown);
+      padding: 2%;
+      margin: -4% 10% 2% 10%;
+      border-style: inset;
+      border-width: 4px;
+      border-color: var(--mediumRedBrown);
+  
+    }
+    section {}
+    article {}
+      #topic1 {}
+      #topic2 {}
+    div {}
+    aside {}
+    footer {
+      background-color: var(--marigoldYellow);
+      color: var(--darkOliveGreen);
+      margin: .5%;
+      padding: .25% .25%;
+      border-style: groove;
+      border-color: var(--darkOliveGreen);
+      border-width: 8px;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    /* ----- Anchors ----- Text links */
+    a {}
+    a:link {}
+    a:hover {}
+    a:active {}
+    a:visited {}
+    
+    /*  ----- Navigation ----- Override text links for navigation only.  */
+    nav {
+      display: flex;
+      margin: 0 auto;
+      padding: 1%;
+      flex-flow: row wrap;
+    }
+  
+    nav a {
+      flex-flow: row wrap;
+      color: var(--paleSand);
+      background-color: var(--mediumRedBrown);
+      margin: -16% 1% 14% 1%;
+      padding: 1% 1%;
+      font-weight: bold;
+      border: solid;
+      border-color: var(--darkOliveGreen);
+      border-width: 4px;
+      text-decoration: none;
+      
+    }
+    nav a:hover {
+      background-color: var(--darkRedBrown);
+      border-style: outset;
+      border-color: var(--darkestOliveGreen);
+    }
+  
+    .local {
+      display: flex;
+      margin: 0 auto;
+      padding: .25%;
+      justify-content: center;
+    }
+  
+    .local a {
+      background-color: var(--darkOliveGreen);
+      margin: .5%;
+      padding: 1%;
+      text-align: center;
+      border: solid;
+      border-color: var(--darkRedBrown);
+      border-width: 3px;
+    }
+  
+    .local a:hover {
+      background-color: var(--darkestOliveGreen);
+    }
+    
+    /*  -----  Typography  ----- */
+    p {}
+    br {}
+    ol, ul, dl {}
+    li {}
+    dt {}
+    dd {}
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      text-align: center;
+      margin: .5%;
+    } 
+    h1 {}
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {}
+    h6 {}
+    
+    abbr {}
+    acronym {}
+    address {}
+    blockquote {}
+      q {}
+      cite {}
+    em {}
+    hr {}
+    mark {}
+    s {}
+    span {}
+    strong {}
+    sub {}
+    sup {}
+    time {}
+    
+    /*  ----- Coding or instructional typography ----- */
+    pre {}
+    code {}
+    kbd {}
+    samp {}
+    var {}
+    del {} 
+    ins {}
+
+      /*  ----- Table ----- */
+  table {
+    border-collapse: collapse;
+    background-color: var(--paleSand);
+    width: 100%;
+  }
+  caption {
+    border-style: outset;
+    border-color: var(--mediumRedBrown);
+    border-width: 2px;
+    background-color: var(--darkOliveGreen);
+    color: var(--paleSand);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 25px;
+    padding: 2%;
+  }
+  thead {
+  }
+  tbody {
+  }
+  tfoot {}
+  tr, th {
+    padding: 1%;
+    margin: 1%;
+  }
+  tr, td {
+    border: solid;
+    border-color: var(--darkRedBrown);
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+  }
+
+  tr {}
+    tr:nth-child(even) {}
+  th {
+    background-color: var(--darkRedBrown);
+    color: var(--paleSand);
+  }
+  td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+    
+    /*  ----- Form ----- */
+    form {}
+    fieldset {
+      background-color: var(--marigoldYellow);
+      font-weight: bold;
+      border-color: var(--darkOliveGreen);
+      border-width: 6px;
+      border-style: double;
+      margin: .5%;
+      padding: .25% 2%;
+      color: var(--darkestOliveGreen);
+      font-size: 18px;
+    }
+      legend {
+        background-color: var(--darkOliveGreen);
+        text-align: center;
+        color: var(--paleSand);
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 1% 3%;
+        margin: .5%;
+        width: 50%;
+        border-style: outset;
+        border-color: var(--mediumRedBrown);
+        border-width: 4px;
+      }
+    label {
+      display: block;
+      margin: .25%;
+      padding: .25%;
+    }
+    
+    button {
+      background-color: var(--darkOliveGreen);
+      color: var(--paleSand);
+      font-weight: bold;
+      border-style: outset;
+      border-color: var(--darkRedBrown);
+      border-width: 3px;
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: 25px;
+      margin: 1%;
+      padding: 1.5%;      
+    }
+
+    button:hover {
+      background-color: var(--darkestOliveGreen);
+      border-color: var(--darkRedBrown);
+      border-width: 3px;
+    }
+
+    #add-icon {
+      color: var(--darkRedBrown);
+      font-size: 24px;
+    }
+
+
+    input {
+      background-color: var(--paleSand);
+      color: var(--darkRedBrown);
+      font-weight: bold;
+      padding: 1.5%;
+      margin: .25%;
+      border-color: var(--mediumRedBrown);
+      border-style: inset;
+      font-size: 14px;
+    }
+    select {
+      background-color: var(--paleSand);
+      font-weight: bold;
+      font-size: 16px;
+      color: var(--darkRedBrown);
+      padding: 1%;
+      border-color: var(--mediumRedBrown);
+      border-width: 2px;
+    }
+      optgroup {}
+      option {
+        font-weight: bold;
+        font-size: 16px;
+      }
+    textarea {
+      font-family: inherit;
+      color: var(--darkRedBrown);
+      font-weight: bold;
+      font-size: 14px;
+      width: 50%;
+      height: 100px;
+      background-color: var(--paleSand);
+    }
+    output {}
+    meter {}
+    progress {}
+    
+    
+    /* ----- Media ----- */
+    figure {
+    }
+      figcaption {}
+      figure img {}
+    svg {}
+    picture {}
+      source {}
+    iframe {}
+    video {}
+    audio {}
+    embed {}
+    object {}
+    
+    /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+    .gallery {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  
+    .gallery figure {
+      width: 320px;
+      margin: 2% 4%;
+      padding: 1%;
+      border-style: double;
+      border-width: 6px;
+      border-color: var(--darkOliveGreen);
+    }
+  
+    .gallery img {
+      width: 100%;
+    }
+  
+    .gallery figcaption {
+      background-color: var(--marigoldYellow);
+      display: block;
+      padding: 2px;
+      border-style: double;
+      border-color: var(--darkOliveGreen);
+      border-width: 2px;
+      padding: 3%;
+    }
+    
+    .floatright {}
+    .floatleft {}
+    .center-middle {}
+    
+    .ten {}
+    .twenty {}
+    .thirty {}
+    .forty {}
+    .fifty {}
+    .sixty {}
+    .seventy {}
+    .eighty {}
+    
+    .radius {}
+    .circle {}
+    .boxshadow {}
+    .tshadow {} 
+    .gradient {}
+    .shape {}
+    
+    @keyframes App-logo {}
+    
+    /*   ===== TABLET  media query overrides mobile styles ===== */
+    @media all and (min-width: 600px) {}
+    
+    /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+    @media all and (min-width: 1080px) {}
+    
+    /*   ===== PRINT  media query overrides previous styles =====  */
+    @media print {}
+    
