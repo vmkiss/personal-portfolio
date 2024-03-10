@@ -1,0 +1,88 @@
+### CREATE five documents.
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "city": "Boracay",
+    "country": "Philippines",
+    "daysVisited": 20,
+    "entryDate": "2020-01-21"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "city": "Berlin",
+    "country": "Germany",
+    "daysVisited": 4,
+    "entryDate": "2015-12-30"
+}
+
+### CREATE 3
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "city": "Chiang Mai",
+    "country": "Thailand",
+    "daysVisited": 6,
+    "entryDate": "2023-02-17"
+}
+
+### CREATE 4
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "city": "Tokyo",
+    "country": "Japan",
+    "daysVisited": 5,
+    "entryDate": "2023-01-18"
+}
+
+### CREATE 5
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "daysVisited": 4,
+    "entryDate": "2023-03-09"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/travels HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/travels/656a55988db316d232e4ec5e HTTP/1.1
+
+
+### UPDATE one document's daysVisited by ID.
+### Replace the ID in the following request with one that exists
+### and update the daysVisited:
+PUT http://localhost:3000/travels/656a55948db316d232e4ec5c HTTP/1.1
+content-type: application/json
+
+{
+    "country": "Japan",
+    "city": "Tokyo",
+    "daysVisited": 4,
+    "entryDate": "2023-01-18"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/travels/656a55908db316d232e4ec5a HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/travels HTTP/1.1
+
